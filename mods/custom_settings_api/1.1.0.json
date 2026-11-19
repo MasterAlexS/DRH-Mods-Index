@@ -1,0 +1,17 @@
+{
+  "id": "custom_settings_api",
+  "name": "Custom Settings API",
+  "version": "1.1.0",
+  "author": "MasterAlexS",
+  "description": "Allows other mods to add custom options and special categories/menus to the settings menu.",
+  "longDescription": "### Overview\n\n**Custom Settings API** extends Dungeon Rampage's native settings architecture, allowing mod developers to create rich, persistent configuration options with zero boilerplate.\n\n### Key Features\n\n- **Rich Control Types**:\n  - **Checkboxes (Booleans)**: Simple toggle switches for enabling or disabling mod features.\n  - **Choice Selectors (Dropdowns / Cycles)**: Multi-option selection controls with custom human-readable labels.\n  - **Numeric Sliders**: Smooth value sliders with configurable minimum, maximum, step increments, display scale, and decimal precision.\n\n- **Flexible Menu Placement**:\n  - **Extend Existing Categories**: Inject mod settings directly into vanilla game categories (`Graphics`, `Audio`, `Controls`, `Interface`, `Display`, `Advanced`).\n  - **Dedicated Mod Categories**: Create brand new category tabs with custom titles (e.g. `INPUT HUD`, `GAMEPLAY MODS`).\n\n- **Dynamic Category Pagination**:\n  - Clamps physical panels to 6, fully preserving vanilla 1.0 geometry without crowding or layout collisions.\n  - Automatically activates left-hand navigation arrows when categories exceed 6, with seamless pagination including native `MODS` and all custom mod categories.\n  - Seamlessly cycles across all tabs using mouse clicks, mouse wheel, keyboard keys (`Q` / `E`, `PageUp` / `PageDown`), or gamepad bumper buttons (`LB` / `RB`).\n\n- **Clean Isolated Storage**:\n  - Saves all custom setting values in its own dedicated configuration file (`data/custom_settings_api/settings.json`), never modifying or interfering with other mods' storage.\n  - Fully interoperable with Mod API 1.4.0+ `context.settings`.\n\n- **Clean Stage Bridge**:\n  - Exposes the API bridge on `openfl.Lib.current.stage.customSettingsApiBridge` and `facade.customSettingsApi` for easy optional integration with zero private reflection.\n\n- **Instant Event Callbacks**:\n  - Supports live change listeners triggered immediately when the player adjusts a setting.\n\n- **Controller & Gamepad Ready**:\n  - Full compatibility with vanilla gamepad navigation, analog sticks, and digital buttons.",
+  "api": "1.4.0",
+  "drh": "16-18",
+  "uses": [
+    "extends"
+  ],
+  "url": "https://github.com/MasterAlexS/DRH-Mod-Custom-Settings-API/releases/download/v1.1.0/custom_settings_api-1.1.0.zip",
+  "size": 17091,
+  "sha256": "7c571ec15f92bf442466983ed985bcf60ee2af1b8865d14409aec6eeb869205a",
+  "source": "https://github.com/MasterAlexS/DRH-Mod-Custom-Settings-API"
+}
